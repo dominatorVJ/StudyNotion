@@ -6,29 +6,10 @@ import { Link, matchPath, useLocation } from "react-router-dom"
 
 import logo from "../../assets/Logo/Logo-Full-Light.png"
 import { NavbarLinks } from "../../data/navbar-links"
-import { apiConnector } from "../../services/apiConnector"
+import { apiConnector } from "../../services/apiconnector"
 import { categories } from "../../services/apis"
 import { ACCOUNT_TYPE } from "../../utils/constants"
-import ProfileDropdown from "../core/Auth/ProfileDropdown"
-
-// const subLinks = [
-//   {
-//     title: "Python",
-//     link: "/catalog/python",
-//   },
-//   {
-//     title: "javascript",
-//     link: "/catalog/javascript",
-//   },
-//   {
-//     title: "web-development",
-//     link: "/catalog/web-development",
-//   },
-//   {
-//     title: "Android Development",
-//     link: "/catalog/Android Development",
-//   },
-// ];
+import ProfileDropdown from "../core/Auth/ProfileDropDown"
 
 function Navbar() {
   const { token } = useSelector((state) => state.auth)
